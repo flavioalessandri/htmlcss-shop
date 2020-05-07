@@ -1,0 +1,66 @@
+/* foglio di stile */
+
+*{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 150px;
+  width: 80%;
+  background-color: darkgrey;
+  font-size: 12px;
+}
+
+/* Selettore che determina lo Stile dei Vari blocchi */
+.blocco{
+  margin: 15px;
+  position: relative;
+  display: inline-block;
+  width: 260px;
+  height:300px;
+}
+
+/* Selettore che determina lo Stile delle immagini Prodotto */
+img.shop{
+  position: absolute;
+  width: 260px;
+  height:300px;
+}
+
+/* Selettore che determina lo Stile delle immagine Cuore */
+img.cuore{
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 230px;
+  right: 110px;
+  z-index: 3;
+}
+
+/* Selettore per il cuore */
+.blocco:hover .cuore{
+  display: block;
+}
+
+.etichetta{
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  width:40px;
+  height:20px;
+  top:0;
+  right:0;
+}
+
+
+.rossa {
+  background-color: red;
+}
+
+.verde {
+  color: white;
+  background-color: green;
+}
