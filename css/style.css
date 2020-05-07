@@ -1,0 +1,30 @@
+/* foglio di stile */
+
+*{
+  margin: 0px;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body{
+  margin: 30px;
+  background-color: white;
+}
+
+
+.blocco{
+  position: relative;
+  background-color: blue;
+}
+
+img{
+  text-align: center;
+}
+
+
+.prodotto{
+  display: inline-block;
+  background-color: lightblue;
+  width: 200px;
+  height:300px;
+}
