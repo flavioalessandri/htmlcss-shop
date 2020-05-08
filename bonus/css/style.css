@@ -7,19 +7,23 @@
 }
 
 body{
-  margin: 150px;
-  width: 80%;
   background-color: darkgrey;
   font-size: 12px;
 }
 
+.linea{
+  position: relative;
+  width: 900px;
+  margin-bottom: 15px;
+}
+
 /* Selettore che determina lo Stile dei Vari blocchi */
 .blocco{
-  margin: 15px;
   position: relative;
   display: inline-block;
   width: 260px;
   height:300px;
+  margin-left: 6px;
 }
 
 /* Selettore che determina lo Stile delle immagine Cuore */
