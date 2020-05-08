@@ -22,6 +22,18 @@ body{
   height:300px;
 }
 
+/* Selettore che determina lo Stile delle immagine Cuore */
+.blocco .cuore{
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  left: 0;
+  text-align: center;
+  font-size: 25px;
+  color: red;
+}
+
 /* Selettore che determina lo Stile delle immagini Prodotto */
 img.shop{
   position: absolute;
@@ -29,23 +41,8 @@ img.shop{
   height:300px;
 }
 
-/* Selettore che determina lo Stile delle immagine Cuore */
-img.cuore{
-  display: none;
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  top: 265px;
-  right: 110px;
-  z-index: 3;
-}
-
-/* Selettore per il cuore */
-.blocco:hover .cuore{
-  display: block;
-}
-
 .etichetta{
+  background-color: red;
   position: absolute;
   text-align: center;
   padding: 5px;
@@ -55,19 +52,26 @@ img.cuore{
   right:0;
 }
 
-.blocco:hover .etichetta{
-  display: block;
-  width: 80px;
-  height: 40px;
-  font-size: 150%;
-}
-
-
-.rossa {
-  background-color: red;
-}
-
-.verde {
+.etichetta.verde{
   color: white;
   background-color: green;
+}
+
+
+/* Comportamenti Hover */
+/* Comportamento selettore cuore */
+.blocco:hover .cuore{
+  display: block;
+}
+
+/* Comportamento selettore etichetta */
+.blocco:hover .etichetta{
+  display: block;
+  width: 50px;
+  height: 30px;
+  font-size: 120%;
+}
+
+.blocco:hover{
+  cursor: crosshair;
 }
